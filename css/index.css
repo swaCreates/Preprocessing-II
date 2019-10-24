@@ -183,6 +183,11 @@ nav {
   justify-content: space-around;
   width: 50%;
 }
+@media (max-width: 500px) {
+  nav {
+    align-content: center;
+  }
+}
 nav a {
   text-decoration: none;
   font-size: 1.6rem;
@@ -202,10 +207,21 @@ nav a {
 .home .containerHead {
   display: flex;
 }
+@media (max-width: 500px) {
+  .home .containerHead {
+    background: red;
+  }
+}
 .home .containerHead header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .containerHead header {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .home hr {
   border: 1px dashed silver;

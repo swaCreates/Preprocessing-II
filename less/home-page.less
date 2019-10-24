@@ -7,13 +7,21 @@
   .containerHead{
     display: flex;
     // .border();
+    @media @mobile{
+      background: red;
+    }
 
     header{
       width: 100%;
       display: flex;
       justify-content: space-between;
-    }
-  }
+      
+      @media @mobile{
+        flex-direction: column;
+        text-align: center;
+      } // closes media
+    } // closes header
+  } // closes container
   hr{
     border: 1px dashed silver;
   }
