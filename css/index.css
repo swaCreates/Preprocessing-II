@@ -186,6 +186,7 @@ nav {
 @media (max-width: 500px) {
   nav {
     align-content: center;
+    width: 100%;
   }
 }
 nav a {
@@ -207,11 +208,6 @@ nav a {
 .home .containerHead {
   display: flex;
 }
-@media (max-width: 500px) {
-  .home .containerHead {
-    background: red;
-  }
-}
 .home .containerHead header {
   width: 100%;
   display: flex;
@@ -223,10 +219,23 @@ nav a {
     text-align: center;
   }
 }
+@media (max-width: 500px) {
+  .home .containerHead header h1 {
+    margin-bottom: 3%;
+  }
+}
 .home hr {
   border: 1px dashed silver;
 }
-.home .top-content div h2 {
+@media (max-width: 500px) {
+  .home .top-content {
+    flex-direction: column;
+    margin: 30px 3%;
+    border: 1px solid blue;
+    max-width: 100%;
+  }
+}
+.home .top-content .top-content div h2 {
   margin-top: 3%;
 }
 .home .content-section {
@@ -235,13 +244,32 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    margin: 30px 3%;
+    border: 1px solid blue;
+    max-width: 100%;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    word-wrap: break-word;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;

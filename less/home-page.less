@@ -7,9 +7,6 @@
   .containerHead{
     display: flex;
     // .border();
-    @media @mobile{
-      background: red;
-    }
 
     header{
       width: 100%;
@@ -19,15 +16,30 @@
       @media @mobile{
         flex-direction: column;
         text-align: center;
-      } // closes media
+      } // closes header media
+      h1{
+        @media @mobile{
+          margin-bottom: 3%;
+        } // closes h1 media
+      } //closes h1
     } // closes header
   } // closes container
   hr{
     border: 1px dashed silver;
   }
 
-  .top-content div h2{
-    margin-top: 3%;
+  .top-content{
+    
+    @media @mobile{
+      flex-direction: column;
+      margin: 30px 3%;
+      border: 1px solid blue;
+      max-width: 100%;
+    }
+
+    .top-content div h2{
+      margin-top: 3%;
+    }
   }
 
   .content-section {
@@ -36,16 +48,31 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile{
+      flex-direction: column;
+      margin: 30px 3%;
+      border: 1px solid blue;
+      max-width: 100%;
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        width: 100%;
+        word-wrap: break-word;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile{
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
