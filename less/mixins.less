@@ -1,1 +1,19 @@
 // Mixins in here
+
+.mixButton(@padding, @bgColor, @color){
+    padding: @padding;
+    background-color: @bgColor;
+    color: @color;
+}
+
+.mixButtonStyle(@textAlign, @fontSize, @fontWeight){
+    text-align: @textAlign;
+    font-size: @fontSize;
+    font-weight: @fontWeight;
+}
+
+.btn{
+    .mixButton(7%, #3D5A80, white);
+    .mixButtonStyle(center, 1.8rem, bold);
+    border-radius: 10px;
+}
