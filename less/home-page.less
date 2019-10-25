@@ -1,4 +1,54 @@
+.border(){
+  border: 1px solid red;
+}
+
 .home {
+
+  .containerHead{
+    display: flex;
+    // .border();
+
+    header{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      
+      @media @mobile{
+        flex-direction: column;
+        text-align: center;
+      } // closes header media
+      h1{
+        @media @mobile{
+          margin-bottom: 3%;
+        } // closes h1 media
+      } //closes h1
+    } // closes header
+  } // closes container
+  .dottedLine{
+    @media @mobile{
+      max-width: 100%;
+    }
+  }
+  hr{
+    border: 1px dashed silver;
+
+    @media @mobile{
+      max-width: 91%;
+    }
+  }
+
+  .top-content{
+    
+    @media @mobile{
+      flex-direction: column;
+      margin: 30px 10%;
+      max-width: 100%;
+    }
+
+    .top-content div h2{
+      margin-top: 3%;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,16 +56,31 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile{
+      flex-direction: column;
+      margin: 30px 10%;
+      max-width: 100%;
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        width: 100%;
+        // word-wrap: break-word;
+      }
     }
+    
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile{
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +91,12 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
 
     .text-content {
       padding-left: 1%;
@@ -53,9 +124,21 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile{
+      display: flex;
+      flex-direction: column;
+      // margin: 30px 10%;
+      width: 100%;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile{
+        width: 77%;
+        margin: 30px 10%;
+      }
     }
   }
 }// home
