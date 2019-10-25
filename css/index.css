@@ -224,14 +224,23 @@ nav a {
     margin-bottom: 3%;
   }
 }
+@media (max-width: 500px) {
+  .home .dottedLine {
+    max-width: 100%;
+  }
+}
 .home hr {
   border: 1px dashed silver;
 }
 @media (max-width: 500px) {
+  .home hr {
+    max-width: 91%;
+  }
+}
+@media (max-width: 500px) {
   .home .top-content {
     flex-direction: column;
-    margin: 30px 3%;
-    border: 1px solid blue;
+    margin: 30px 10%;
     max-width: 100%;
   }
 }
@@ -247,8 +256,7 @@ nav a {
 @media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
-    margin: 30px 3%;
-    border: 1px solid blue;
+    margin: 30px 10%;
     max-width: 100%;
   }
 }
@@ -277,6 +285,12 @@ nav a {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
