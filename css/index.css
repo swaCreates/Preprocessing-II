@@ -7,6 +7,12 @@
   font-weight: bold;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .btn {
+    padding: 4%;
+    width: 95%;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -267,7 +273,6 @@ nav a {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
-    word-wrap: break-word;
   }
 }
 .home .content-section .img-content {
@@ -313,7 +318,20 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 77%;
+    margin: 30px 10%;
+  }
 }

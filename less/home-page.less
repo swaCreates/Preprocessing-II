@@ -69,7 +69,7 @@
 
       @media @mobile{
         width: 100%;
-        word-wrap: break-word;
+        // word-wrap: break-word;
       }
     }
     
@@ -124,9 +124,21 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile{
+      display: flex;
+      flex-direction: column;
+      // margin: 30px 10%;
+      width: 100%;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile{
+        width: 77%;
+        margin: 30px 10%;
+      }
     }
   }
 }// home
